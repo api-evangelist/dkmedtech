@@ -1,7 +1,28 @@
 aid: dkmedtech
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dkmedtech.png
 name: dkmedtech
-description: dkmedtech is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  dkmedtech (Suzhou Dingke Medical Technology Co., Ltd.) is a medical device
+  manufacturer founded in 2010 in Suzhou, Jiangsu Province, China, developing
+  interventional vascular devices across three areas: peripheral vascular
+  intervention, cardiovascular intervention, and neurovascular intervention.
+  With a team of 100+ and a global manufacturing center launched in December
+  2025, its products carry NMPA (China), CE (Europe), and FDA (United States)
+  regulatory clearances. Backed by Qiming Venture Partners, the company was
+  added to the API Evangelist network as a portfolio-lead stub; it publishes a
+  corporate website but no developer API, documentation, or machine-readable
+  API surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/dkmedtech/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Medical Devices
+- MedTech
+- Healthcare
+- Cardiovascular
+- Interventional Devices
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dkmedtech-domain-security.yml
 - type: Website
-  url: https://dkmedtech.com
+  url: https://www.dkmedtech.com
+- type: About
+  url: https://www.dkmedtech.com/about/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
